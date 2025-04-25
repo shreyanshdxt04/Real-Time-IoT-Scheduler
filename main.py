@@ -1,6 +1,7 @@
-from iot_simulator import simulate_iot_tasks
-from gui import create_dashboard
+import tkinter as tk
+from gui import SchedulerApp
 
 if __name__ == "__main__":
-    simulate_iot_tasks()
-    create_dashboard()
+    root = tk.Tk()
+    app = SchedulerApp(root)
+    root.mainloop()
